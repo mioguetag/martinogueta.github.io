@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Martín Ogueta</title>
+  <meta name="description" content="Martín Ogueta — exhibition design, media art and data visualization. Santiago de Chile.">
+  <script type="module" crossorigin src="./assets/index-C_XluHlf.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-DHBqAFnl.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="top">
+    <a class="brand" href="#" data-link="home">Martín Ogueta</a>
+    <a class="dock" href="#" aria-label="Back to top"></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#index" data-link="index"><span data-t="nav.index">Index</span> <span class="count"></span></a>
+      <a href="#lab" data-link="lab" data-t="nav.lab">Lab</a>
+      <a href="#about" data-link="about" data-t="nav.about">About</a>
+      <button class="lang" type="button" aria-label="Switch language">EN / ES</button>
+    </nav>
+  </header>
+
+  <!-- Landing: cubo de vidrio + fotos de caracteres flotando (Three.js) + nombre abajo -->
+  <!-- Capa fija del cubo y las fotos (Three.js). Las fotos viven en la portada; el cubo baja a la barra. -->
+  <div class="stage" id="stage" aria-hidden="true"></div>
+
+  <section class="home" id="home" aria-label="Home">
+    <div class="hud hud-right">
+      <a class="btn" href="#index" data-t="home.enter">Enter the index ↓</a>
+    </div>
+    <div class="ident">
+      <h1 class="name" id="name">Martín Iñaki</h1>
+      <p class="what" data-t="home.what">Exhibition design · Media art · Data visualization
+Santiago de Chile</p>
+    </div>
+    <div class="tip" id="tip" aria-hidden="true"></div>
+  </section>
+
+  <main id="main" class="page" tabindex="-1"></main>
+
+  <div class="preview" id="preview" aria-hidden="true"><img alt=""><i></i></div>
+
+  <!-- Ficha de proyecto: panel que entra desde la derecha y cubre la mitad de la pantalla -->
+  <div class="scrim" id="scrim" aria-hidden="true"></div>
+  <aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="p-title" tabindex="-1" inert>
+    <div class="drawer-bar"><button class="drawer-close" type="button" data-t="p.close">Close ✕</button></div>
+    <div class="drawer-body" id="drawer-body"></div>
+  </aside>
+
+</body>
+</html>
